@@ -1,0 +1,51 @@
+{
+  "name": "dsh-reasoning-levels",
+  "version": "1.2.1",
+  "description": "思考强度：在 DeepSeek Harness 设置→插件里按模型编辑 reasoningEfforts 档位，支持按供应商折叠/展开模型列表 | Edit reasoningEfforts per model in DeepSeek Harness, with collapsible provider groups",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml"
+  ],
+  "scripts": {
+    "test": "node test/collapse.test.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis-plugin",
+    "reasoning-efforts",
+    "thinking-levels",
+    "settings-ui"
+  ],
+  "license": "MIT",
+  "author": "bbpeople",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbpeople/dsh-reasoning-levels.git"
+  },
+  "homepage": "https://github.com/bbpeople/dsh-reasoning-levels#readme",
+  "bugs": {
+    "url": "https://github.com/bbpeople/dsh-reasoning-levels/issues"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}

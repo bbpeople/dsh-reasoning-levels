@@ -1,0 +1,6 @@
+- insert:
+    - id: reasoning-levels
+      name: dsh-reasoning-levels
+      inject:
+        - webServer
+        - configEditor
